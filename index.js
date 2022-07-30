@@ -5,7 +5,7 @@ const axios = require("axios")
 app.get("/", async (req, res) => {
     try {
         let rs = await axios.get('https://jsonplaceholder.typicode.com/posts')
-        return res.send({success: true, data: rs.data})
+        return res.send({success: true, data: "Xin chao cac ban"})
     } catch (error) {
         return res.status(500).send({success: false, message: error.message})
     }
